@@ -1,7 +1,7 @@
 
 # cluster-node
 
-  Cluster node visualization.
+  Cluster node visualization (WIP).
 
   ![cluster node](https://dsz91cxz97a03.cloudfront.net/iRtlhjKXiyk.png)
 
