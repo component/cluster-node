@@ -1,5 +1,5 @@
 
-build: components index.js cluster-node.css template.js
+build: components index.js node.css template.js
 	@component build --dev
 
 template.js: template.html

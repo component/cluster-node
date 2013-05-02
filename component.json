@@ -3,7 +3,7 @@
   "repo": "component/cluster-node",
   "description": "Cluster node",
   "version": "0.0.1",
-  "keywords": [],
+  "keywords": ["cluster"],
   "dependencies": {},
   "development": {},
   "license": "MIT",
@@ -13,6 +13,6 @@
     "template.js"
   ],
   "styles": [
-    "cluster-node.css"
+    "node.css"
   ]
 }
