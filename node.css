@@ -2,6 +2,7 @@
 .node {
   font: 12px "Helvetica Neue", Helvetica, Arial, sans-serif;
   display: inline-block;
+  width: 170px;
   margin: 15px;
   float: left;
 }
