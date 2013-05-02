@@ -1,1 +1,1 @@
-module.exports = '';
+module.exports = '<div class="node">\n  <ul class="processes">\n  </ul>\n</div>\n';

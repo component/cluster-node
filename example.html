@@ -13,7 +13,7 @@
       name: 'web1'
     });
 
-    var n = 5;
+    var n = 4;
     while (n--) {
       var proc = new Proc({
         name: 'app',
@@ -23,6 +23,24 @@
 
       node.add(proc);
     }
+
+    var proc = new Proc({
+      name: 'redis',
+      pid: 1232,
+      version: '2.9.7'
+    });
+
+    node.add(proc);
+
+    var proc = new Proc({
+      name: 'mongo',
+      pid: 1240,
+      version: '2.2.1'
+    });
+
+    node.add(proc);
+
+    document.body.appendChild(node.el);
   </script>
 </body>
 </html>
