@@ -13,6 +13,7 @@
 
 .node .stats {
   float: right;
+  font-size: 10px;
   margin-top: -20px;
   color: #333;
 }
