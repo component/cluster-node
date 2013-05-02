@@ -11,6 +11,7 @@ module.exports = Node;
 
 function Node(obj) {
   this.name = obj.name;
+  obj.loadavg = obj.loadavg.join(' ');
   this.el = domify(html);
   reactive(this.el, obj, this);
   this.list = this.el.querySelector('.processes');
