@@ -5,7 +5,9 @@
   "version": "0.0.1",
   "keywords": ["cluster"],
   "dependencies": {
-    "component/cluster-process": "0.0.1"
+    "component/cluster-process": "0.0.1",
+    "component/domify": "0.1.0",
+    "component/reactive": "0.11.0"
   },
   "development": {},
   "license": "MIT",
