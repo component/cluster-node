@@ -37,3 +37,22 @@
   margin: 5px;
   padding: 0;
 }
+
+.process {
+  position: relative;
+}
+
+.process:after {
+  position: absolute;
+  bottom: -2px;
+  left: 50%;
+  display: block;
+  content: ' ';
+  width: 4px;
+  height: 4px;
+  background: #999;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  margin-left: -2px;
+}
