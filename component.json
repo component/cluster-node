@@ -4,7 +4,9 @@
   "description": "Cluster node",
   "version": "0.0.1",
   "keywords": ["cluster"],
-  "dependencies": {},
+  "dependencies": {
+    "component/cluster-process": "0.0.1"
+  },
   "development": {},
   "license": "MIT",
   "main": "index.js",
