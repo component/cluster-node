@@ -8,13 +8,14 @@
 }
 
 .node h2 {
-  font-size: 16px;
+  font-size: 14px;
+  margin: 5px;
 }
 
 .node .stats {
   float: right;
   font-size: 10px;
-  margin-top: -20px;
+  margin-top: -15px;
   color: #333;
 }
 
