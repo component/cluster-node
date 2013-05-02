@@ -9,6 +9,8 @@
     var Node = require('cluster-node');
     var Proc = require('cluster-process');
 
+    // web
+
     function web(id, n) {
       var node = new Node({
         name: 'web-' + id,
@@ -26,30 +28,60 @@
         node.add(proc);
       }
 
-      var proc = new Proc({
-        name: 'redis',
-        pid: 1232,
-        version: '2.9.7'
-      });
-
-      node.add(proc);
-
-      var proc = new Proc({
-        name: 'mongo',
-        pid: 1240,
-        version: '2.2.1'
-      });
-
-      node.add(proc);
 
       document.body.appendChild(node.el);
     }
 
-    web(2, 2)
-    web(3, 1)
-    web(1, 4)
-    web(4, 2)
-    web(5, 2)
+    web(1, 4);
+    web(2, 4);
+    web(3, 4);
+    web(4, 2);
+    web(5, 2);
+
+    // db
+
+    var node = new Node({
+      name: 'db-1',
+      loadavg: '3.0 2.1 1.5',
+      uptime: '10d'
+    });
+
+    var proc = new Proc({
+      name: 'mongo',
+      pid: 1240,
+      version: '2.2.1'
+    });
+
+    node.add(proc);
+    document.body.appendChild(node.el);
+
+    // redis
+
+    var node = new Node({
+      name: 'red-1',
+      loadavg: '3.0 2.1 1.5',
+      uptime: '15d'
+    });
+
+    var proc = new Proc({
+      name: 'redis',
+      pid: 1232,
+      version: '2.9.7'
+    });
+
+    node.add(proc);
+
+
+    var proc = new Proc({
+      name: 'redis',
+      pid: 1233,
+      version: '2.9.7'
+    });
+
+    node.add(proc);
+
+    document.body.appendChild(node.el);
+
   </script>
 </body>
 </html>
