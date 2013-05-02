@@ -5,7 +5,7 @@
   "version": "0.0.1",
   "keywords": ["cluster"],
   "dependencies": {
-    "component/cluster-process": "0.1.0",
+    "component/cluster-process": "0.2.0",
     "component/domify": "0.1.0",
     "component/reactive": "0.11.0"
   },
