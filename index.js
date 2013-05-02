@@ -23,4 +23,5 @@ Node.prototype.add = function(proc){
   li.appendChild(proc.el);
   this.list.appendChild(li);
   this.procs.push(proc);
+  this.el.setAttribute('count', this.procs.length);
 };
