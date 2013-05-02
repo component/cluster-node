@@ -9,38 +9,43 @@
     var Node = require('cluster-node');
     var Proc = require('cluster-process');
 
-    var node = new Node({
-      name: 'web1'
-    });
+    function web(id, n) {
+      var node = new Node({
+        name: 'web-' + id
+      });
 
-    var n = 4;
-    while (n--) {
+      while (n--) {
+        var proc = new Proc({
+          name: 'app',
+          pid: Math.random() * 5000 | 0,
+          version: '1.0.5'
+        });
+
+        node.add(proc);
+      }
+
       var proc = new Proc({
-        name: 'app',
-        pid: Math.random() * 5000 | 0,
-        version: '1.0.5'
+        name: 'redis',
+        pid: 1232,
+        version: '2.9.7'
       });
 
       node.add(proc);
+
+      var proc = new Proc({
+        name: 'mongo',
+        pid: 1240,
+        version: '2.2.1'
+      });
+
+      node.add(proc);
+
+      document.body.appendChild(node.el);
     }
 
-    var proc = new Proc({
-      name: 'redis',
-      pid: 1232,
-      version: '2.9.7'
-    });
-
-    node.add(proc);
-
-    var proc = new Proc({
-      name: 'mongo',
-      pid: 1240,
-      version: '2.2.1'
-    });
-
-    node.add(proc);
-
-    document.body.appendChild(node.el);
+    web(3, 1)
+    web(2, 2)
+    web(1, 4)
   </script>
 </body>
 </html>
