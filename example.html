@@ -11,7 +11,9 @@
 
     function web(id, n) {
       var node = new Node({
-        name: 'web-' + id
+        name: 'web-' + id,
+        loadavg: '1.51 1.36 1.32',
+        uptime: '5d'
       });
 
       while (n--) {

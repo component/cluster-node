@@ -1,8 +1,22 @@
 
 .node {
+  font: 12px "Helvetica Neue", Helvetica, Arial, sans-serif;
   display: inline-block;
   max-width: 475px;
   margin: 15px;
+}
+
+.node h2 {
+  font-size: 16px;
+}
+
+.node .stats {
+  float: right;
+  margin-top: -20px;
+}
+
+.node .stats span {
+  margin-left: 10px;
 }
 
 .node ul {
