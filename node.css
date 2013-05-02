@@ -26,8 +26,7 @@
 .node ul {
   margin: 0;
   padding: 15px;
-  border: 1px solid #eee;
-  background: #fafafa;
+  border: 1px dashed #ddd;
   -webkit-border-radius: 2px;
   -moz-border-radius: 2px;
   border-radius: 2px;
