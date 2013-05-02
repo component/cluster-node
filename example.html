@@ -1,0 +1,28 @@
+<html>
+<head>
+  <title>Cluster - Node</title>
+  <link rel="stylesheet" type="text/css" href="build/build.css">
+</head>
+<body>
+  <script src="build/build.js"></script>
+  <script>
+    var Node = require('cluster-node');
+    var Proc = require('cluster-process');
+
+    var node = new Node({
+      name: 'web1'
+    });
+
+    var n = 5;
+    while (n--) {
+      var proc = new Proc({
+        name: 'app',
+        pid: Math.random() * 5000 | 0,
+        version: '1.0.5'
+      });
+
+      node.add(proc);
+    }
+  </script>
+</body>
+</html>
