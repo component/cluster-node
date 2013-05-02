@@ -2,7 +2,7 @@
 .node {
   font: 12px "Helvetica Neue", Helvetica, Arial, sans-serif;
   display: inline-block;
-  max-width: 175px;
+  width: 310px;
   margin: 15px;
   float: left;
 }
