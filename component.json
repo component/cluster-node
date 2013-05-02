@@ -1,0 +1,18 @@
+{
+  "name": "cluster-node",
+  "repo": "component/cluster-node",
+  "description": "Cluster node",
+  "version": "0.0.1",
+  "keywords": [],
+  "dependencies": {},
+  "development": {},
+  "license": "MIT",
+  "main": "index.js",
+  "scripts": [
+    "index.js",
+    "template.js"
+  ],
+  "styles": [
+    "cluster-node.css"
+  ]
+}
